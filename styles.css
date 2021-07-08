@@ -381,6 +381,81 @@ span{
     font-weight: 400;
 }
 
+/* growth section styling start from here */
+.growth-container{
+    border: 2px solid black;
+}
+
+.growth-container input{
+    color: yellow;
+}
+
+.circle{
+    position: relative;
+    margin-bottom: 22px;
+}
+
+.number{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    color: #051441;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+
+
+/* table styling starts from here */
+.price-table-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    max-width: 100%;
+}
+
+table{
+    border: 0.1px solid rgb(241, 237, 237);
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px rgb(240, 230, 230);
+}
+
+th{
+    font-family: 'Poppins',sans-serif;
+}
+
+th span{
+    color: white;
+}
+
+td{
+    padding: 1rem;
+    font-family: "Poppins",sans-serif;
+}
+
+td i{
+    color: rgb(40, 192, 103);
+    margin-left: 2.5rem;
+}
+
+td button{
+    padding: 0.5rem;
+    margin-left: 0.6rem;
+    border: 1px hidden;
+    color: gray;
+    font-size: 0.8rem;
+    font-family: "Poppins";
+    border-radius: 1.5rem;
+    width: 6rem;
+}
+
+td button:hover{
+    background-color: rgb(29, 29, 240);
+    color: white;
+}
 
 @media screen and (max-width:900px){
     nav .nav-links ul{
