@@ -203,6 +203,7 @@ span{
     border-radius: 50%;
     color: white;
     margin: 0.5rem;
+    font-size: 1.5rem;
 }
 
 .feature1 i{
@@ -291,6 +292,96 @@ span{
 }
 
 
+/* section container 2  styling starts from here */
+.section-container-2{
+    background: rgb(248, 248, 248);
+    height: 90vh;
+}
+
+.services-main-heading{
+    margin: 2rem;
+    margin-top: 3.5rem;
+    padding: 3rem;
+}
+
+.services-section-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.startup_service_img{
+    position: relative;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.startup_service_img .shape{
+    background: url(https://droitthemes.com/wp/saasland-theme/wp-content/plugins/saasland-core/widgets/images/new_shape.png) no-repeat scroll left 0;
+    position: absolute;
+    left: -37px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.services-section-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service-listing-wrapper{
+    padding: 1rem;
+    max-height: max-content;
+    margin: 2rem;
+}
+
+.services-listing-container{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-icons{
+    border: 1px hidden purple;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.icons1{
+    background: rgb(108, 180, 238);
+}
+
+.icons2{
+    background: rgb(248, 189, 80);
+}
+
+.icons3{
+    background: pink;
+}
+
+.icons4{
+    background: rgb(247, 79, 79);
+}
+.services-icons i{
+    color: white;
+}
+
+.services-description{
+    margin-left: 1rem;
+    font-family: "Poppins";
+}
+
+.services-description p{
+    font-weight: 400;
+}
+
+
 @media screen and (max-width:900px){
     nav .nav-links ul{
         position: fixed;
@@ -353,6 +444,16 @@ span{
         height: 10rem;
     }
 
+    .section-container-2{
+        width: 100vw;
+        height: 170vh;
+    }
+
+    .startup_service_img img{
+        max-width: 100%;
+        margin: auto;
+        height: auto;
+    }
 }
 
 @media screen and (max-width:450px) {
