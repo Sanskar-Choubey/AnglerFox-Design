@@ -14,7 +14,19 @@
     height: 80px;
     background:transparent;
     flex-wrap: wrap;
-    position: stikcy;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: 0.6s;
+    z-index: 10000;
+    margin: 0;
+}
+
+.stikcy{
+    background: white;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-container:active{
@@ -44,6 +56,15 @@
     border-radius: 0.5rem;
     cursor: pointer;
 }
+
+.nav-search i {
+    color: white;
+}
+
+.stikcy ul li,.stikcy .nav-logo,.stikcy .nav-search i{
+    color: darkblue;
+}
+
 
 .line{
     position: absolute;
@@ -83,7 +104,7 @@ label i{
     cursor: pointer;
 }
 
-label{
+.menu-btn{
     display: none;
 }
 
@@ -563,6 +584,8 @@ footer{
     text-align: center;
 }
 
+
+
 @media screen and (max-width:900px){
     nav .nav-links ul{
         position: fixed;
@@ -580,7 +603,7 @@ footer{
         margin: 1.5rem;
     }    
 
-    label{
+    .menu-btn{
         display: block;
     }
 
