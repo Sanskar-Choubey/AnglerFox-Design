@@ -24,17 +24,48 @@
             </div>
             <div class='nav-links'>
                 <ul>
-                   <a class='links'href='#'><li>Home</li></a>
-                    <a class='links' href='#'><li>Pages</li></a>
-                    <a class='links' href='#'><li>Portfolio</li></a>
-                    <a class='links' href='#'><li>Blog</li></a>
-                    <a class='links' href='#'><li>Shop</li></a>
-                    <a class='links'href='#'><li>Elements</li></a>
+                   <li><a class='links'href='#'>Home</a></li>
+                   <li><a class='links' href='#'>Pages</a>
+                    <div class='sub-menu'>
+                        <ul>
+                            <li><a href="#">Career</a></li>
+                            <li><a href='#'>Services</a></li>
+                            <li><a href='#'>Case Study</a></li>
+                            <li><a href='#'>About us</a></li>
+                            <li><a href='#'>Process</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href='#'>Team</a></li>
+                            <li><a href='#'>Sign Up</a></li>
+                            <li><a href='#'>Sign In</a></li>
+                            <li><a href='#'>Contact</a></li>
+                            <li><a href='#'>FAQs</a></li>
+                            <li><a href='#'>404 Error</a></li>
+                        </ul>
+                    </div>
+                   </li>
+                   <li><a class='links' href='#'>Portfolio</a></li>
+                   <li><a class='links' href='#'>Blog</a>
+                    <div class='sub-menu'>
+                        <ul>
+                            <li><a href="#">Blog listing</a></li>
+                            <li><a href='#'>Blog Grid</a></li>
+                            <li><a href='#'>Blog Masonry</a></li>
+                            <li><a href='#'>Single Post</a></li>
+                            <li><a href='#'>Full-width Single Post</a></li>
+                        </ul>
+                    </div>
+                   </li>
+                   <li><a class='links' href='#'>Shop</a></li>
+                   <li><a class='links'href='#'>Elements</a></li>
                 </ul>
-                <input type=checkbox id='check'> 
-                <label for='check' class="menu-btn">
-                    <i class="material-icons">dehaze</i>
-                </label>
+            </div>
+            <!-- <label for='check' class="menu-btn">
+                <i class="material-icons">dehaze</i>
+            </label> -->
+            <div class='menu-toggle' id='mobile-view'>
+                <span class='bar'></span>
+                <span class='bar'></span>
+                <span class='bar'></span>
             </div>
             <div class='nav-search'>
                 <i class="material-icons" '>search</i>
@@ -216,7 +247,7 @@
                                 <td data-label='Unlimited'> <i class='material-icons'>highlight_off</i></td>
                             </tr>
                             <tr>
-                                <td data-label='Comparison Features'>Adding time manually</td>
+                                <td data-label='Comparison Features'>Adding time<br>manually</td>
                                 <td data-label='Free'> <i class='material-icons'>offline_pins</i></td>
                                 <td data-label='Enterprise'> <i class='material-icons'>offline_pins</i></td>
                                 <td data-label='Unlimited'> <i class='material-icons'>offline_pins</i></td>
@@ -228,7 +259,7 @@
                                 <td data-label='Unlimited'> <i class='material-icons'>highlight_off</i></td>
                             </tr>
                             <tr>
-                                <td data-label='Comparison Features'>Adding time manually</td>
+                                <td data-label='Comparison Features'>Adding time<br>manually</td>
                                 <td data-label='Free'> <i class='material-icons'>offline_pins</i></td>
                                 <td data-label='Enterprise'> <i class='material-icons'>offline_pins</i></td>
                                 <td data-label='Unlimited'> <i class='material-icons'>highlight_off</i></td>
@@ -273,64 +304,64 @@
                     </table>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class='testimonial_sections'>
-        <div class='wrapper_container'>
+            <div class='slider_container'>
+                <div class='wrapper_container'>
             
             
-            <div class='content-container'>
-                <h5>Testimonials</h5>
-                <h4>Loved by businesses,<br> and individuals across <br/> the globe.</h4>
-            </div>
-
-
-            <div class='slider_testimonials'>
-                <div class='containing'>
-                <div class='inner-containing'>
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <div class='content-container'>
+                        <h5>Testimonials</h5>
+                        <h4>Loved by businesses,<br> and individuals across <br/> the globe.</h4>
                     </div>
-                    <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div>
-                            <img src='https://droitthemes.com/wp/saasland-theme/wp-content/uploads/2019/02/member_01.jpg' height="70px" width="70px">
+        
+        
+                    <div class='slider_testimonials'>
+                        <div class='containing'>
+                        <div class='inner-containing'>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div>
+                                    <img src='https://droitthemes.com/wp/saasland-theme/wp-content/uploads/2019/02/member_01.jpg' height="70px" width="70px">
+                                </div>
+                                <p>He nicked it hanky panky Eaton naff its your round quaint cheeky cheers,tomfoolery bannet posh blimey what a planker vagabond,zanked Elizabeth give us a bell?</p>
+                                <h5>Mark Tony</h5>
+                                <h6>Software Developer</h6>
+                            </div>
+                            <div class="carousel-item">
+                                <div>
+                                    <img src='https://droitthemes.com/wp/saasland-theme/wp-content/uploads/2018/11/feedback_img_two-70x70.png' height="70px" width="70px">
+                                </div>
+                                <p>He nicked it hanky panky Eaton naff its your round quaint cheeky cheers,tomfoolery bannet posh blimey what a planker vagabond,zanked Elizabeth give us a bell?</p>
+                                <h5>Eh Jewel</h5>
+                                <h6>Software Developer</h6>
+                            </div>
+                            <div class="carousel-item">
+                                <div>
+                                    <img src='https://droitthemes.com/wp/saasland-theme/wp-content/uploads/2018/11/feedback_img_two-70x70.png' height="70px" width="70px">
+                                </div>
+                                <p>He nicked it hanky panky Eaton naff its your round quaint cheeky cheers,tomfoolery bannet posh blimey what a planker vagabond,zanked Elizabeth give us a bell?</p>
+                                <h5>Eh Jewel</h5>
+                                <h6>Software Developer</h6>
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <p>He nicked it hanky panky Eaton naff its your round quaint cheeky cheers,tomfoolery bannet posh blimey what a planker vagabond,zanked Elizabeth give us a bell?</p>
-                        <h5>Mark Tony</h5>
-                        <h6>Software Developer</h6>
-                    </div>
-                    <div class="carousel-item">
-                        <div>
-                            <img src='https://droitthemes.com/wp/saasland-theme/wp-content/uploads/2018/11/feedback_img_two-70x70.png' height="70px" width="70px">
                         </div>
-                        <p>He nicked it hanky panky Eaton naff its your round quaint cheeky cheers,tomfoolery bannet posh blimey what a planker vagabond,zanked Elizabeth give us a bell?</p>
-                        <h5>Eh Jewel</h5>
-                        <h6>Software Developer</h6>
-                    </div>
-                    <div class="carousel-item">
-                        <div>
-                            <img src='https://droitthemes.com/wp/saasland-theme/wp-content/uploads/2018/11/feedback_img_two-70x70.png' height="70px" width="70px">
                         </div>
-                        <p>He nicked it hanky panky Eaton naff its your round quaint cheeky cheers,tomfoolery bannet posh blimey what a planker vagabond,zanked Elizabeth give us a bell?</p>
-                        <h5>Eh Jewel</h5>
-                        <h6>Software Developer</h6>
+                        </div>
                     </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                </div>
-                </div>
                 </div>
             </div>
         </div>
