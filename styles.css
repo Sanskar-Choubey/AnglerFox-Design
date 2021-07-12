@@ -833,3 +833,57 @@ footer{
 .carousel button{
     display: none;
 }
+
+/* Progress bar styling goes here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background: whitesmoke;
+}
+
+.wrapper{
+    max-width: 100%;
+    margin:auto
+}
+
+.wrapper h2{
+    text-align: center;
+    font-size: 50px;
+    margin: 5% 0 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+.skills-area{
+    margin-top: 5%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cardProgressBar{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+    width: 15rem;
+}
+
+.contentProgressBar h4{
+    text-align: center;
+    font-family: "Poppins",sans-serif;
+    font-size: 1.2rem;
+    color: rgb(15, 15, 83);
+    margin-top: 1rem;
+}
+
+.contentProgressBar p{
+    text-align: center;
+    margin: 1rem;
+    font-family: 'Poppins',sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
