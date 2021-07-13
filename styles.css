@@ -28,7 +28,6 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
-    border: 3px solid green;
     width: 60%;
 }
 
@@ -124,12 +123,13 @@
     margin-top: 8px;
     margin-left: -15px;
     padding: 1rem;
-    transition: ease 0.8s;
+    transition: ease 0.6s;
 }
 
 .nav-links ul li:hover .sub-menu a{
     text-decoration: none;
     color: black;
+    text-align: left;
 }
 
 .nav-links ul li:hover .sub-menu ul{
@@ -178,7 +178,7 @@
 #mobile-view{
     position: absolute;
     top: 23%;
-    right: 5%;
+    right: 7%;
     transform: translate(5%,20%);
 }
 
@@ -205,6 +205,7 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 
+
     nav .nav-links ul{
         position: fixed;
         left: -100%;
@@ -213,10 +214,10 @@
         width: 100%;
         background-color: rgb(21, 25, 240);
         display: block;
-        height: 60vh;
+        height: 40vh;
         text-align: center;
         padding: 2rem;
-        overflow:hidden
+        overflow:hidden;
     }
 
     .nav-links ul.active{
@@ -225,15 +226,17 @@
         transition: all 0.5s ease;
     }
 
+    
     .nav-links ul li{
         margin: 1.5rem;
-        color: white;
+        color: #051441; 
     }    
 
     .menu-btn{
         display: block;
         float: right;
     }
+
 }
 
 
@@ -298,14 +301,30 @@ span{
 .hero-btn{
     margin: 1rem;
     margin-top: 0.6rem;
-    padding:0.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 7rem;
     border-radius: 1.5rem;
     border: 1px hidden white;
-    font-size: 0.8rem;
-    color: blue;
-    box-shadow: 1px 1px 1px black;
+    font-size: 15px;
+    font-weight: 700;
+    color: #563bd1;
+    box-shadow: 0 20px 20px 0 rgb(0 11 40 / 10%);
+    display: inline-block;
+    z-index: 1;
+    cursor: pointer;
 }
+
+.hero-btn a{
+    text-decoration: none;
+    color:#563bd1;
+}
+
+.hero-btn a i{
+    font-size: 16px;
+    margin-left: 0.3rem;
+}
+
 
 
 /* section styling starts from here */
@@ -712,6 +731,10 @@ footer{
 @media screen and (max-width:900px){
     header{
         height:120vh;
+    }
+
+    .hero-container{
+        margin-top: 1rem;
     }
 
     .hero-content{
