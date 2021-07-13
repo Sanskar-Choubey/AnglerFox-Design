@@ -10,6 +10,7 @@ button.addEventListener('click',function(){
     navLinks.classList.toggle('active')
 })
 
-
 console.log(button);
 console.log(navLinks);
+
+console.log(listCard);

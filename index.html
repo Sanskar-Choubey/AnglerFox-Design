@@ -84,40 +84,50 @@
     </header>
     <section>
         <div class='section-container-1'>
+            <div>
             <h2>Ways your team can <br/> Use hubstaff</h2>
-
+            
             <div class='features-list-wrapper'>
-            <ul>
-                <li class='feature1'>
-                    <a class='links'href='#'><i class='material-icons'>cloud_upload</i>
-                    <h3>Marketing<br>Cloud</h3></a>
-                </li>
-                <li class='feature2'>
-                    <a class='links' href='#'><i class='material-icons'>tablet_android</i>
-                    <h3>Commerce<br>Apps</h3></a>
-                </li>
-                <li class='feature3'>
-                    <a class='links' href='#'><i class='material-icons'>school</i>
-                    <h3>Hubstaff<br>App</h3></a>
-                </li>
-                <li class='feature4'>
-                    <a class='links' href='#'><i class='material-icons'>refresh</i>
-                    <h3>Automation<br>Engine</h3></a>
-                </li>
-                <li class='feature5'>
-                    <a class='links' href='#'><i class='material-icons'>lightbulb_outline</i>
-                    <h3>Business<br>Intellegence</h3></a>
-                </li>
-            </ul>
-            </div>
+                <ul>
+                    <li class='feature1 active'>
+                        <a role='tab' data-toggle='tab' class='links' href='#saasland-tab-content-2592' aria-controls='saasland-tab-content-2591' aria-selected="true"><i class='material-icons'>cloud_upload</i>
+                        <h3>Marketing<br>Cloud</h3></a>
+                    </li>
+                    <li class='feature2'>
+                        <a role='tab' data-toggle='tab' 
+                        class='links' href='#saasland-tab-content-2592'
+                        aria-controls='saasland-tab-content-2591' aria-selected="true"><i class='material-icons'>tablet_android</i>
+                        <h3>Commerce<br>Apps</h3></a>
+                    </li>
+                    <li class='feature3'>
+                        <a role='tab' data-toggle='tab' 
+                        class='links' href='#saasland-tab-content-2592'
+                        aria-controls='saasland-tab-content-2591' aria-selected="true"><i class='material-icons'>school</i>
+                        <h3>Hubstaff<br>App</h3></a>
+                    </li>
+                    <li class='feature4'>
+                        <a role='tab' data-toggle='tab' 
+                        class='links' href='#saasland-tab-content-2592'
+                        aria-controls='saasland-tab-content-2591' aria-selected="true"><i class='material-icons'>refresh</i>
+                        <h3>Automation<br>Engine</h3></a>
+                    </li>
+                    <li class='feature5'>
+                        <a role='tab' data-toggle='tab' 
+                        class='links' href='#saasland-tab-content-2592'
+                        aria-controls='saasland-tab-content-2591' aria-selected="true"><i class='material-icons'>lightbulb_outline</i>
+                        <h3>Business<br>Intellegence</h3></a>
+                    </li>
+                </ul>
+                </div>
 
-            <div class='startup_tab_img'>
-                <div class="web_img">
-                    <img src="https://droitthemes.com/wp/saasland-theme/wp-content/uploads/2019/06/web_image.jpg" alt="Business <br> Intellegence">
-                </div>
-                <div class="phone_img">
-                    <img src="https://droitthemes.com/wp/saasland-theme/wp-content/uploads/2019/06/iPhoneX.png" alt="Marketing <br> Cloud">
-                </div>
+                <div class='startup_tab_img'>
+                    <div class="web_img">
+                        <img src="https://droitthemes.com/wp/saasland-theme/wp-content/uploads/2019/06/web_image.jpg" alt="Business <br> Intellegence">
+                    </div>
+                    <div class="phone_img">
+                        <img src="https://droitthemes.com/wp/saasland-theme/wp-content/uploads/2019/06/iPhoneX.png" alt="Marketing <br> Cloud">
+                    </div>
+            </div>
             </div>
             <div class='section-container-2'>
                 <h2 class='services-main-heading'>
@@ -409,6 +419,16 @@
     <script>
         $(function(){
             $('.circlechart').circlechart();
+        });
+    </script>
+    <script>
+        $('body').on('click', '.features-list-wrapper ul li', function() {
+            $(this).toggleClass("active");
+        });
+
+        $('body').on('click', '.features-list-wrapper ul li', function() {
+        $('.features-list-wrapper ul li').removeClass('active');
+        $(this).addClass("active");
         });
     </script>
 </body>
