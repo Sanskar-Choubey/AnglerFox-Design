@@ -6,9 +6,10 @@
     box-sizing: border-box;
 }
 
+
 .nav-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: 80px;
     background:transparent;
@@ -17,10 +18,20 @@
     left: 0;
     top: 0;
     width: 100%;
-    transition: 0.6s;
+    transition: 0.5s;
     z-index: 10000;
-    margin: 0;
+    /* margin: 0;   this is change done on 13 */
+    margin-top: 15px;
 }
+
+.wrapper-nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid green;
+    width: 60%;
+}
+
 
 .stikcy{
     background: white;
@@ -42,17 +53,19 @@
     display: flex;
     gap: 1rem;
     list-style-type: none;
+    justify-content: space-evenly;
+    justify-content: center;
+    padding-top: 1rem;
 }
 
-.nav-links ul li{
+.nav-links ul li a{
     color: white;
     font-family: 'Poppins',sans-serif;
-    font-size: 1.1rem;
+    font-size: 15px;
     font-weight: 500;
-    letter-spacing: 1px;
-    transition: all 0.4s ease-out;
-    padding:0.2rem;
-    border-radius: 0.5rem;
+    /* letter-spacing: 1px; */
+    /* transition: all 0.4s ease-out; */
+    padding:0 0.5rem;
     cursor: pointer;
 }
 
@@ -60,7 +73,7 @@
     color: white;
 }
 
-.stikcy ul li,.stikcy .nav-logo,.stikcy .nav-search i{
+.stikcy ul li a,.stikcy .nav-logo,.stikcy .nav-search i, .stikcy ul li a:hover{
     color: darkblue;
 }
 
@@ -92,10 +105,11 @@
     text-decoration: none;
 }
 
-.nav-links ul li:hover{
-    font-weight: bold;
-    font-size: 1.2rem;
-    border-bottom: 0.5px solid white;
+.nav-links ul li a:hover{
+    /* font-weight: bold; */
+    /* font-size: 1.2rem; */
+    border-bottom: 0.3px solid white;
+    transition:color 0.3s ease 0s;
 }
 
 .sub-menu{
