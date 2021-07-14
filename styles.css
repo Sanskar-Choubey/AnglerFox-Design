@@ -240,6 +240,12 @@
     align-items: center;
     flex-wrap: wrap;
     background:url(https://droitthemes.com/wp/saasland-theme/wp-content/themes/saasland/assets/img/new/startup_banner_bg.png) no-repeat center bottom;
+    /* changes */
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 header{
@@ -254,12 +260,19 @@ header{
     justify-content: center;
     justify-items: center;
     flex-wrap: wrap;
+    padding: 2rem 0rem;
 }
 
 .container-wrapper img{
     margin: 1rem;
     padding-top: 1.5rem;
     max-width: 100%;
+    vertical-align: middle;
+    height: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 2rem;
 }
 
 .hero-content{
@@ -267,6 +280,7 @@ header{
     max-width: auto;
     text-align: left;
     margin: 1rem;
+    padding: 1rem 2rem;
 }
 
 .hero-content h1{
@@ -353,7 +367,7 @@ span{
 .features-list-wrapper ul li{
     margin: 1rem;
     list-style: none;
-    padding: 0 15px;
+    padding:15px;
     /* background-color: rgb(241, 238, 238); */
     background: #fbfbfd;
     border-radius: 0.5rem;
@@ -390,7 +404,7 @@ span{
     padding: 1.5rem;
     border-radius: 50%;
     color: white;
-    margin: 2.3rem;
+    margin: 0 2rem;
     font-size: 1.5rem;
     vertical-align: middle;
     margin-bottom: 1rem;
@@ -451,7 +465,7 @@ span{
     font-weight: 400;
     line-height: 26px;
     white-space: pre-line;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 .startup_tab_img{
@@ -484,7 +498,7 @@ span{
 /* section container 2  styling starts from here */
 .section-container-2{
     background: #fbfbfd;
-    height: 90vh;
+    /* height: 90vh; */
     padding:100px 0px 0px 0px;
 }
 
@@ -817,7 +831,7 @@ td button:hover{
 
 footer{
     background-color:#07112d;;
-    height: 40vh;
+    /* height: 40vh;  changes made after suggestions*/ 
     font-family: 'Poppins',sans-serif;
     max-width: 100%;
     margin: auto;
@@ -952,7 +966,7 @@ footer{
 
     .section-container-2{
         width: 100vw;
-        height: 170vh;
+        /* height: 170vh; */
     }
 
     .startup_service_img img{
@@ -1031,7 +1045,6 @@ footer{
     line-height: 45px;
     font-size: 30px;
 }
-
 
 .carousel_slider{
     width: 60%;
