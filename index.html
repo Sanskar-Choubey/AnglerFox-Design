@@ -182,7 +182,7 @@
             </div>
             <div class='progress_container'>
                 <div class='wrapper'>
-                    <h2>Measure and increase
+                    <h2>Measure and increase<br>
                         your reach</h2>
                     
             
@@ -225,20 +225,22 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class='wrapper-table'>
                 <h2>Plan Comparison <br/> Pricing Table</h2>
 
                 <div class='price-table-container'>
                     <table class='table'>
                         <thead>
-                            <th style='color: black;background: whitesmoke;border: 0.1px solid rgb(209, 208, 208);'>Comparison <br/>Features</th>
+                            <th class='main-title-table' style='color: #222d39;'>
+                                <h4>
+                            Comparison Features</h4></th>
                             <th style='background-color: rgb(55, 238, 192);'>Free <br><span>$0.0/ mo</span></th>
                             <th style='background-color: rgb(68, 146, 247);'>Enterprise <br><span>$30.0 /mo</span></th>
                             <th style='background-color:rgb(241, 131, 227) '>Unlimited <br><span>$40.0/ mo</span></th>
                         </thead>
                         <tbody>
                             <tr>
-                                <td data-label='Comparison Features'>Adding time<br>manually</td>
+                                <td data-label='Comparison Features'>Adding time manually</td>
                                 <td data-label='Free'> <i class='material-icons'>offline_pins</i></td>
                                 <td data-label='Enterprise'> <i class='material-icons'>offline_pins</i></td>
                                 <td data-label='Unlimited'> <i class='material-icons'>offline_pins</i></td>
@@ -256,7 +258,7 @@
                                 <td data-label='Unlimited'> <i class='material-icons'>highlight_off</i></td>
                             </tr>
                             <tr>
-                                <td data-label='Comparison Features'>Adding time<br>manually</td>
+                                <td data-label='Comparison Features'>Adding time manually</td>
                                 <td data-label='Free'> <i class='material-icons'>offline_pins</i></td>
                                 <td data-label='Enterprise'> <i class='material-icons'>offline_pins</i></td>
                                 <td data-label='Unlimited'> <i class='material-icons'>offline_pins</i></td>
@@ -268,7 +270,7 @@
                                 <td data-label='Unlimited'> <i class='material-icons'>highlight_off</i></td>
                             </tr>
                             <tr>
-                                <td data-label='Comparison Features'>Adding time<br>manually</td>
+                                <td data-label='Comparison Features'>Adding time manually</td>
                                 <td data-label='Free'> <i class='material-icons'>offline_pins</i></td>
                                 <td data-label='Enterprise'> <i class='material-icons'>offline_pins</i></td>
                                 <td data-label='Unlimited'> <i class='material-icons'>highlight_off</i></td>
@@ -422,13 +424,13 @@
         });
     </script>
     <script>
-        $('body').on('click', '.features-list-wrapper ul li', function() {
-            $(this).toggleClass("active");
-        });
+        // $('body').on('click', '.features-list-wrapper ul li', function() {
+        //     $(this).toggleClass("activee");
+        // });
 
         $('body').on('click', '.features-list-wrapper ul li', function() {
-        $('.features-list-wrapper ul li').removeClass('active');
-        $(this).addClass("active");
+        $('.features-list-wrapper ul li').removeClass('activee');
+        $(this).addClass("activee");
         });
     </script>
 </body>
