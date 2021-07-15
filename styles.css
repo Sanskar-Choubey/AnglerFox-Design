@@ -702,12 +702,32 @@ span{
 }
 
 .table{
-        max-width: 80%;
-        margin:auto;
-        width: 80vw;
-        border-collapse: collapse;
-        font-family: 'Poppins',sans-serif;
-        box-shadow: 0 4px 5px 0 rgb(12 0 46 / 5%);
+    /* max-width: 80%; */
+    margin:auto;
+    width: 60vw;
+    border-collapse: collapse;
+    font-family: 'Poppins',sans-serif;
+    box-shadow: 0 4px 5px 0 rgb(12 0 46 / 5%);
+}
+
+@media screen and (max-width:800px){
+    .price-table-container{
+        width: max-content;
+    }
+
+    .table{
+        width: max-content;
+    }
+}
+
+@media screen and (max-width:600px){
+    .price-table-container{
+        width: inherit;
+    }
+
+    .table{
+        width: 20vw;
+    }
 }
     
 .table td,.table th{
@@ -716,6 +736,7 @@ span{
         font-size: 16px;
         color: #222d39;
         border: 0px hidden;
+        width: 20vw;
 }
     
 .table th{
