@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 .nav-container{
     display: flex;
     justify-content: space-evenly;
@@ -28,9 +27,8 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
-    width: 60%;
+    width: 62%;
 }
-
 
 .stikcy{
     background: white;
@@ -175,6 +173,10 @@
     top: 23%;
     right: 7%;
     transform: translate(5%,20%);
+}
+
+.stikcy .menu-toggle .bar{
+    border: 1px solid blue;
 }
 
 @media screen and (max-width:900px){
@@ -367,12 +369,12 @@ span{
 .features-list-wrapper ul li{
     margin: 1rem;
     list-style: none;
-    padding:15px;
+    padding:10px;
     /* background-color: rgb(241, 238, 238); */
     background: #fbfbfd;
     border-radius: 0.5rem;
     outline: none;
-    width: 210px;
+    /* width: 210px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -487,7 +489,7 @@ span{
 
 .phone_img{
     position: absolute;
-    right:26rem;
+    right:10rem;
     bottom: 0;
     transform: translateX(30px);
     transition: all .5s linear;
@@ -498,7 +500,6 @@ span{
 /* section container 2  styling starts from here */
 .section-container-2{
     background: #fbfbfd;
-    /* height: 90vh; */
     padding:100px 0px 0px 0px;
 }
 
@@ -510,19 +511,43 @@ span{
     font-weight: 600;
     line-height: 40px;
     font-family: 'Poppins',sans-serif;
+    text-align: center;
 }
 
 .services-section-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
+@media (max-width:1024px){
+    .container{
+    max-width: 1024px;
+    }
+
+    .row{
+        flex-wrap: wrap;
+    }
+}
 
 .startup_service_img{
     position: relative;
     padding-top: 20px;
     z-index: 1;
+    margin: 0 1rem;
+}
+
+.startup_service_img .phone_img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+@media (max-width:576px){
+    .startup_service_img .phone_img{
+        width: 20%;
+    }
 }
 
 .startup_service_img .shape{
@@ -535,6 +560,15 @@ span{
     z-index: -1;
 }
 
+/* .startup_service_img img{
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    vertical-align: middle;
+} */
+
 .services-section-container{
     display: flex;
     justify-content: center;
@@ -546,7 +580,8 @@ span{
 .service-listing-wrapper{
     padding: 1rem;
     max-height: max-content;
-    margin: 2rem;
+    max-width: 100%;
+    margin: 0 2rem;
 }
 
 .services-listing-container{
@@ -619,11 +654,15 @@ span{
     padding: 115px 0px 0px 0px;
 }
 
-
 .wrapper{
     max-width: 100%;
     margin:auto;
     margin-bottom: 2rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
 }
 
 .wrapper h2{
@@ -644,11 +683,17 @@ span{
 
 .skills-area{
     margin-top: 5%;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.center-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cardProgressBar{
@@ -773,6 +818,7 @@ span{
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    text-align: center;
 }
 
 .main-title-table{
@@ -861,7 +907,7 @@ footer{
     border-width: 2px 0px 0px 0px;
     display: flex;
     justify-content: center;
-    align-items: cen;
+    align-items: center;
 }
 
 @media (max-width:680px){
@@ -877,11 +923,26 @@ footer{
     flex-wrap: wrap;
     width: 70vw;
     margin:auto;
+    /* border: 2px solid red; */
 }
+
+.company-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 .company-info img{
     width: 10rem;
     margin: 1rem;
+    padding: 0.5rem;
+}
+
+.company-info p{
+    max-width: 100%;
+    margin: auto;
     padding: 0.5rem;
 }
 
@@ -901,6 +962,16 @@ footer{
     text-decoration: none;
 }
 
+.aboutus-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+}
+
+
 .aboutus-section h5{
     color: white;
     font-size: 18px;
@@ -909,6 +980,7 @@ footer{
     margin-top: 3.3rem;
     margin-bottom: 1rem;
     margin-left: 2rem;
+    margin-right: 2rem;
     /* padding: 0.5rem; */
     text-align: center;
     padding: 0;
@@ -917,11 +989,23 @@ footer{
 
 .aboutus-section ul{
     list-style:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.aboutus-section ul a{
+    max-width: 100%;
+    margin: auto;
 }
 
 .aboutus-section ul li{
     text-align: center;
     margin: 0.5rem;
+    max-width: 100%;
+    /* margin: auto; */
 }
 
 .social-section h5{
@@ -931,6 +1015,16 @@ footer{
     margin-top: 3.3rem;
     padding: 0.5rem;
     text-align: center;
+}
+
+.social-section .footer-social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-section .footer-social-links span{
+    margin: 0 0.5rem;
 }
 
 @media screen and (max-width:380px){
@@ -977,7 +1071,7 @@ footer{
 
     .phone_img{
         display: absolute;
-        right: 5rem;
+        right: 10rem;
     }
 
     .phone_img img{
@@ -1010,11 +1104,17 @@ footer{
     }
 } 
 
+/* slider-testimonial starts from here */
+
 
 .slider_container{
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 100px 0px 0px 0px;
+}
+
+.slider-row{
+    padding: 1rem 0rem;
 }
 
 .wrapper_container{
@@ -1027,14 +1127,6 @@ footer{
     max-width: 100%;
     margin: auto;
     overflow: hidden;
-}
-
-.row{
-    display: flex;
-    height: inherit;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
 }
 
 .content-container{
@@ -1067,53 +1159,76 @@ footer{
     font-size: 30px;
 }
 
-.carousel_slider{
+.slider_testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 50%;
+    background:url('https://droitthemes.com/wp/saasland-theme/wp-content/themes/saasland/assets/img/new/testimonial_bg_two.png') no-repeat center 0/contain;
+    margin:auto;
+    max-width: 100%;
+    /* flex-basis: 1; */
+}
+
+.containing{
+    padding: 1rem;
+}
+
+.inner-containing{
+    width: 68%;
+    max-width: 100%;
+    margin: auto;
+    padding: 0.8rem;
+}
+
+/* .carousel_slider{
     width: 60%;
     border: 1px solid black;
     padding: 1rem;
     display: flex;
     flex-flow: inherit;
-}
+} */
 
 .card{
     overflow: hidden;
-    border: 2px solid green;
 }
 
-.slider_testimonials{
+.containing .carousel-inner .carousel-item .img-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 40%;
-    background:url('https://droitthemes.com/wp/saasland-theme/wp-content/themes/saasland/assets/img/new/testimonial_bg_two.png') no-repeat center 0/contain;
-    margin:auto;
-    max-width: 100%;
-    flex-basis: 1;
+}
+
+.containing .carousel-inner .carousel-item .img-container img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width:800px){
-    .carousel-item{
-        height: inherit;
+    .slider-container{
+        height: max-content;
     }
 
-    .row{
-        height: max-content;
+    .carousel-item{
+        height: inherit;
     }
 
     .slider_testimonials{
         background: none;
         width: 100vw;
+        margin-top: 1rem;
      }
  
-     .slider_container{
+     /* .slider_container{
         height: 100vh;
-    }
+    } */
 
     .content-container{
         text-align: left;
         padding: 0.5rem;
-        margin-left: 0.5rem;
+        margin:auto;
         max-width: 100%;
     }
 
@@ -1132,34 +1247,51 @@ footer{
 
     .containing .carousel-item div img{
         border-radius: 50%;
-        right: 2rem;
+        /* right: 2rem; */
         margin-bottom: 0.5rem;
         border: 1px solid purple;
     }
 
 }
 
-@media (max-width:600px){
-    .row{
-        height: max-content;
+
+@media (max-width:480px){
+    .content-container{
+        max-width: 100%;
+        margin: auto;
     }
+
+    .content-container h4{
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
+@media (max-width:600px){
+    /* .row{
+        height: max-content;
+    } */
 
     .slider_container{
         height: max-content
     }
 
     .content-container{
-        text-align: left;
         padding: 0.5rem;
-        margin-left: 0.5rem;
+        margin:auto;
         max-width: 100%;
     }
 
     .containing{
         max-width: 100%;
         margin: auto;
-        height: fit-content;
+        height: max-content;
     }
+
+    .inner-containing{
+        height: max-content;
+    }
+
     .wrapper_container{
         width: 85vw;
         max-width: 100%;
@@ -1168,9 +1300,9 @@ footer{
     }
    
     .slider_testimonials{
-       background: none;
-       width: max-content;
-       height: max-content;
+            background: none;
+            width: 100vw;
+            margin-top: 1rem;
     }
 
     .carousel-item{
@@ -1196,18 +1328,17 @@ footer{
     .containing .carousel-item div img{
         border-radius: 50%;
         border: 1px solid black;
-        right: 12rem;
+        /* right: 12rem; */
         margin-bottom: 0.5rem;
-        margin-left: 15rem;
+        /* margin-left: 15rem; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }
 
-.inner-containing{
-    width: 60%;
-    max-width: 100%;
-    margin: auto;
-}
+
 
 /* styling part for the content inside the carousel */
 
@@ -1220,10 +1351,9 @@ footer{
 
 .carousel-item div img{
     border-radius: 50%;
-    margin-left: 9rem;
+    /* margin-left: 9rem; */
     border: 1px solid white;
     position: relative;
-    right: 2rem;
 }
 
 .carousel-item p{
